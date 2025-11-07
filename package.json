@@ -1,0 +1,26 @@
+{
+  "name": "magikfake-sdk",
+  "version": "1.0.0-beta",
+  "description": "Generate realistic data through AI and the large amount of data stored in our system.",
+  "main": "dist/index.js",
+  "module": "dist/index.m.js",
+  "unpkg": "dist/index.umd.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "rm -rf dist && microbundle --tsconfig tsconfig.json --no-sourcemap",
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^29.5.1",
+    "jest": "^29.5.0",
+    "microbundle": "^0.15.1",
+    "ts-jest": "^29.1.0",
+    "ts-node": "^10.9.1"
+  },
+  "dependencies": {
+    "cross-fetch": "^3.1.5"
+  }
+}
