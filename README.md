@@ -20,7 +20,7 @@ Generate realistic data through AI and the large amount of data stored in our sy
 ## Install
 
 ```bash
-npm install magikfake
+npm install magikfake@beta
 ```
 
 ---
@@ -230,8 +230,8 @@ const client = new Client({apiKey: 'your-api-key'});
 const query = {
     language: Language.en, // required: The values available are: en, it, es, de, fr.
     topic: 'user',  // required: A casual string that represents the topic
-    context: Context.library // optional: The business context of your data. It is possible to choose certain values. See Context enum values.
-    limit: 4 // optional: The number of records to generate.
+    context: Context.library, // optional: The business context of your data. It is possible to choose certain values. See Context enum values.
+    limit: 4, // optional: The number of records to generate.
     schema: {     
         id: 'objectId',
         name: {
@@ -334,7 +334,7 @@ import {Client, Language, Context }from 'magikfake';
 
 const client = new Client({apiKey: 'your-api-key'});
 
-const fakeData = await client.fakeData.tokenStatus()
+const tokenStatus = await client.fakeData.tokenStatus()
 ```
 **Response example**
 ```json

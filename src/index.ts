@@ -1,5 +1,6 @@
 import { FakeData } from './fake-data';
 import { Schema } from './schema';
+import {Language, Context, SchemaType } from "./types";
 
 export class Client {
   fakeData: FakeData;
@@ -15,3 +16,5 @@ export class Client {
     this.schema = new Schema(config);
   }
 }
+
+export { Language, Context, SchemaType };

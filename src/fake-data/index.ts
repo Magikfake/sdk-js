@@ -63,7 +63,7 @@ export class FakeData extends Base {
     /**
     * Token status related to the generation of fake data.
     * 
-    * const fakeData = await client.fakeData.tokenStatus()
+    * const tokenStatus = await client.fakeData.tokenStatus()
     * 
     * @returns {Promise<ITokenStatus>} The promise resolves to an object.
     */
