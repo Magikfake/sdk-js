@@ -682,7 +682,7 @@ Some of the errors that may be encountered include:
 In any of these cases, the user should review their code and make any necessary corrections or updates to address the error. By working with the Magikfake library and handling errors appropriately, users can generate high-quality, realistic fake data for a variety of purposes.
 
 
-## 🆘 Supports and issue
+## 🆘 Support and issue
 
 If you need support you can contact us at the following email: support@magikfake.com.
 
