@@ -9,6 +9,7 @@ export interface IFakeDataQuery {
 }
 
 export interface ITokenStatus {
+    tokensConsumedForRequest?: number,
     tokensOverflow: number,
     tokenLimit: number,
     tokenRemaining: number,

@@ -316,8 +316,9 @@ const fakeData = await client.fakeData.generate(query)
         },
     ],
     "tokenStatus": {
+        "tokensConsumedForRequest": 5000, // Indicates the number of tokens consumed for the request
         "tokensOverflow": 0, // Indicates the number of token that overflowed the plan
-        "tokenLimit": 500, // Number of token per month included in the plan
+        "tokenLimit": 25000, // Number of token per month included in the plan
         "tokenRemaining": 500, // Number of token remaining
         "tokenResetDate": "Sat, 17 Jun 2023 08:17:07 GMT" // Indicates the date for the token reset
     }

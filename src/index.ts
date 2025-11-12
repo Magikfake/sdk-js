@@ -1,6 +1,8 @@
 import { FakeData } from './fake-data';
 import { Schema } from './schema';
-import {Language, Context, SchemaType } from "./types";
+import { IFakeDataQuery, ITokenStatus  } from "./fake-data/types";
+import { ISchemaQuery, ISchemaParams, ISchema } from "./schema/types";
+import { Language, Context, SchemaType } from "./types";
 import { BadRequestError, TooManyRequestsError, InvalidAuthorization, PaymentRequired } from "./errors";
 
 export class Client {
@@ -20,3 +22,5 @@ export class Client {
 
 export { Language, Context, SchemaType };
 export { BadRequestError, TooManyRequestsError, InvalidAuthorization, PaymentRequired }
+export { IFakeDataQuery, ITokenStatus };
+export { ISchemaQuery, ISchemaParams, ISchema };
