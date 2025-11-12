@@ -14,7 +14,7 @@ Generate realistic data through AI and the large amount of data stored in our sy
 - 🪄 AI Engine - Fake data are generated through an AI engine.
 - 🔆 Flexible scheme - User can define a schema similar to mongoose, using primitive types.
 - 🌏 Localization - Data are translated into 5 languages: 🇬🇧, 🇮🇹, 🇪🇸, 🇩🇪, 🇫🇷 
-- 🏦 Data store - Large amount of data stored in our system.
+- 🏦 Dataset - Large amount of dataset in our system.
 - 💾 Save schema - User can save a schema to use it at a later time.
 
 ## 📦 Install
