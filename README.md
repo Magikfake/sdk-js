@@ -1,12 +1,9 @@
 
 <div align="center">
-  <img src="./assets/images/logo.svg" width="200"/>
+  <img src="https://raw.githubusercontent.com/Magikfake/sdk-js/47f342dd8437e809fedb66e0ec0e56901e8520bd/assets/images/logo.svg"  alt="Magikfake logo"  width="200"/>
 
   <p>
 Generate realistic data through AI and the large amount of data stored in our system. The magikfake AI engine is in continuous learning to generate safe data to be used for a specific project</p>
-  
-  [![npm version](https://badgen.net/npm/v/magikfake)](https://www.npmjs.com/package/magikfake)
-  [![npm downloads](https://badgen.net/npm/dm/magikfake)](https://www.npmjs.com/package/magikfake)
 </div>
 
 ## 🚀 Features
