@@ -52,6 +52,7 @@ export class FakeData extends Base {
     return { 
       data: body.data,
       tokenStatus: {
+        tokensConsumedForRequest: parseInt(headers.get('x-tokens-consumed-for-request')),
         tokensOverflow: parseInt(headers.get('x-tokens-overflow')),
         tokenLimit: parseInt(headers.get('x-token-limit')),
         tokenRemaining: parseInt(headers.get('x-token-remaining')),
@@ -63,7 +64,7 @@ export class FakeData extends Base {
     /**
     * Token status related to the generation of fake data.
     * 
-    * const fakeData = await client.fakeData.tokenStatus()
+    * const tokenStatus = await client.fakeData.tokenStatus()
     * 
     * @returns {Promise<ITokenStatus>} The promise resolves to an object.
     */

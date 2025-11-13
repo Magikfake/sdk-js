@@ -1,26 +1,23 @@
 
 <div align="center">
-  <img src="./assets/images/logo.svg" width="200"/>
+  <img src="https://raw.githubusercontent.com/Magikfake/sdk-js/47f342dd8437e809fedb66e0ec0e56901e8520bd/assets/images/logo.svg"  alt="Magikfake logo"  width="200"/>
 
   <p>
 Generate realistic data through AI and the large amount of data stored in our system. The magikfake AI engine is in continuous learning to generate safe data to be used for a specific project</p>
-  
-  [![npm version](https://badgen.net/npm/v/magikfake)](https://www.npmjs.com/package/magikfake)
-  [![npm downloads](https://badgen.net/npm/dm/magikfake)](https://www.npmjs.com/package/magikfake)
 </div>
 
-## Features
+## 🚀 Features
 
 - 🪄 AI Engine - Fake data are generated through an AI engine.
 - 🔆 Flexible scheme - User can define a schema similar to mongoose, using primitive types.
 - 🌏 Localization - Data are translated into 5 languages: 🇬🇧, 🇮🇹, 🇪🇸, 🇩🇪, 🇫🇷 
-- 🏦 Data store - Large amount of data stored in our system.
+- 🏦 Dataset - Large amount of dataset in our system.
 - 💾 Save schema - User can save a schema to use it at a later time.
 
-## Install
+## 📦 Install
 
 ```bash
-npm install magikfake
+npm install magikfake@beta
 ```
 
 ---
@@ -31,7 +28,7 @@ Use it for testing now.
 
 ---
 
-## Introduction
+## 🪄 Introduction
 
 Magikfake was created to leverage the power of **AI** in generating data that closely resembles real-world data.
 
@@ -51,7 +48,7 @@ For each property defined, the system analyzes the key and type to generate the 
 
 Unlike other fake data generation systems, Magikfake simplifies schema definition by allowing the user to assign a **primitive** type (**string**, **number**, **date**, **boolean**, **objectId**, etc...) to each property, without the need for a custom type to obtain the desired value.
 
-## Usage and access limits
+## 💻 Usage and access limits
 
 To use Magikfake's library for generating fake data, users must obtain an API key. This can be done by registering for an account on the Magikfake website at the following link: https://app.magikfake.com.
 
@@ -65,11 +62,11 @@ By obtaining an API key and subscribing to a Magikfake plan, users can quickly a
 | Standard                 | Available in the official version             | Available in the official version   |
 | Pro                      | Available in the official version             | Available in the official version   |
 
-## Try it online
+## ⚡️ Try it online
 
 You can try Magikfake online by visiting https://magikfake.com. 1,000,000 tokens are available daily and shared among site users. If you run out of tokens, you can register on the site to take advantage of the 25,000 tokens available monthly.
 
-## Supported types and validations
+## 📖 Supported types and validations
 
 Magikfake supports a variety of primitive types that can be assigned to the properties in the schema. 
 
@@ -161,7 +158,7 @@ The types supported are:
    | <pre lang="json">{&#13; "users": [&#13;  { &#13;   "id": "objectId",&#13;   "firstName": "string", &#13;   "lastName": "string", &#13;   "age": "number", &#13;   "isFirstLogin": "boolean",    &#13;   "birthDate": "date" &#13;   }&#13; ]&#13;}</pre>or<pre lang="json">{&#13; "users": {&#13;  "type": [{ &#13;    "id": "objectId",&#13;    "firstName": "string", &#13;    "lastName": "string", &#13;    "age": "number", &#13;    "isFirstLogin": "boolean",    &#13;    "birthDate": "date" &#13;   }]&#13; }&#13;}</pre>  | the **users** field of type **array** indicates a list of values of type object, where it is possible to define fields of various types. |
 
 
-## Schema example
+## 📜 Schema example
 
 Here is a schema example with various types of fields:
 
@@ -202,7 +199,7 @@ The fake data generated will have this type of structure:
 The result will try to provide a compatibility between the keys and the types, this to make the data as truthful as possible.     
 
 
-## Fake data
+## 🎯​ Fake data
 
 ### Generate fake data
 
@@ -230,8 +227,8 @@ const client = new Client({apiKey: 'your-api-key'});
 const query = {
     language: Language.en, // required: The values available are: en, it, es, de, fr.
     topic: 'user',  // required: A casual string that represents the topic
-    context: Context.library // optional: The business context of your data. It is possible to choose certain values. See Context enum values.
-    limit: 4 // optional: The number of records to generate.
+    context: Context.library, // optional: The business context of your data. It is possible to choose certain values. See Context enum values.
+    limit: 4, // optional: The number of records to generate.
     schema: {     
         id: 'objectId',
         name: {
@@ -316,8 +313,9 @@ const fakeData = await client.fakeData.generate(query)
         },
     ],
     "tokenStatus": {
+        "tokensConsumedForRequest": 5000, // Indicates the number of tokens consumed for the request
         "tokensOverflow": 0, // Indicates the number of token that overflowed the plan
-        "tokenLimit": 500, // Number of token per month included in the plan
+        "tokenLimit": 25000, // Number of token per month included in the plan
         "tokenRemaining": 500, // Number of token remaining
         "tokenResetDate": "Sat, 17 Jun 2023 08:17:07 GMT" // Indicates the date for the token reset
     }
@@ -334,7 +332,7 @@ import {Client, Language, Context }from 'magikfake';
 
 const client = new Client({apiKey: 'your-api-key'});
 
-const fakeData = await client.fakeData.tokenStatus()
+const tokenStatus = await client.fakeData.tokenStatus()
 ```
 **Response example**
 ```json
@@ -351,7 +349,7 @@ const fakeData = await client.fakeData.tokenStatus()
 tokenStatus(): Promise<ITokenStatus>
 ```
 
-## Schema
+## 📜 Schema
 
 With Magikfake, users have the ability to save their defined schema for future use. 
 
@@ -667,7 +665,7 @@ const response = await client.schema.delete("642ab202f419d954a2b35605")
 true
 ```
 
-## Errors
+## ❗ Errors
 
 When using the methods provided by the Magikfake library, it is possible that an exception may be raised. If this occurs, the user will receive an error message indicating the nature of the issue.
 
@@ -681,7 +679,7 @@ Some of the errors that may be encountered include:
 In any of these cases, the user should review their code and make any necessary corrections or updates to address the error. By working with the Magikfake library and handling errors appropriately, users can generate high-quality, realistic fake data for a variety of purposes.
 
 
-## Supports and issue
+## 🆘 Support and issue
 
 If you need support you can contact us at the following email: support@magikfake.com.
 

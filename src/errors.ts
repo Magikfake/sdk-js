@@ -21,3 +21,10 @@ export class InvalidAuthorization extends Error {
       super(message);
     }
 }
+
+export class PaymentRequired extends Error {
+ 
+    constructor(message: string) {
+      super(message);
+    }
+}
