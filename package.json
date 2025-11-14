@@ -1,6 +1,6 @@
 {
   "name": "magikfake",
-  "version": "1.0.0-beta",
+  "version": "1.0.0-beta.1",
   "description": "Generate realistic data through AI and the large amount of data stored in our system.",
   "main": "dist/index.js",
   "module": "dist/index.m.js",
